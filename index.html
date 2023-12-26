@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <section id="wrapper">
+
+        <!-- Topmost Circle -->
+        <div id="circle1"></div>
+
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Profile Image -->
+            <div id="profilepic">
+                <img src="./assets/1.png" alt="" width="150px" height="150px">
+            </div>
+
+            <!-- Name -->
+            <h1>Kumar Akshat</h1>
+
+            <!-- About -->
+            <h2>Web Developer</h2>
+
+            <!-- Buttons -->
+            <div class="button">
+
+                <button id="share" onclick="openmodal()">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <span>Share My Profile</span>
+                </button>
+
+                <button id="follow">Follow Me</button>
+
+            </div>
+        </div>
+
+        <!-- Bottom Circle -->
+        <div id="circle2">
+
+        </div>
+
+        <!-- Share Modal -->
+        <div class="shareModal">
+
+            <!-- Share My Profile -->
+            <div id="share">
+                <div>
+                    <h1>Share My Profile</h1>
+                </div>
+                <div>
+                    <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+
+
+            <h3>Share this via</h3>
+
+            <!-- Social Media Icons -->
+            <div class="iconsbox">
+
+                <div id="fb" class="icon" onclick="shareOnFacebook()">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div id="whatsapp" class="icon" onclick="shareOnWhatsapp()">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div id="discord" class="icon" onclick="shareOnDiscord()">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <div id="insta" class="icon" onclick="shareOnInsta()">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div id="linkedin" class="icon" onclick="shareOnLinkedIn()">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
